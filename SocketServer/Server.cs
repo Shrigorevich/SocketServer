@@ -77,7 +77,7 @@ namespace SocketServer
                         catch (FormatException e)
                         {
                             Console.WriteLine("Exception: {0}", e.ToString());
-                            client.Send(Encoding.ASCII.GetBytes("Invalid command. Please enter 'list' or any integer value" + "\r\n"));
+                            client.Send(Encoding.ASCII.GetBytes("Invalid command. Please enter 'list', 'disconnect' or any integer value" + "\r\n"));
                         }
                     } else
                     {
